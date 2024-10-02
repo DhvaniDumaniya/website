@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="{% static 'css/first.css' %}">
+</head>
+<body>
+    
+    <nav class="container">
+        <ul class="ul-list">
+            <li class="li-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="li-item"><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li class="li-item"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <h2>Aboutus</h2>
+        <p class="c">
+            name:abcd abcd <br><br>
+            name:fghj dfrt <br><br>
+            address:ewkj,hhefueu,hfyegfg.<br><br>
+            contact:2323233232<br>
+        </p>
+    </nav>
+</body>
+</html>

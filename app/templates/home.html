@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/first.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+{% comment %} <a href="{% url 'login' %}">Login</a> {% endcomment %}
+
+    <nav class="container">
+        <ul class="ul-list">
+           
+            {% comment %} <a href="{% url 'login' %}">Login</a> {% endcomment %}
+            <li class="li-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="li-item"><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li class="li-item"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul> 
+        <p class="a">welcome to our travel world</p>
+        {% comment %} <p class="abc"><a href="{% url 'login' %}">login</a></p> {% endcomment %}
+    <p class="abcd"><a href="{% url 'sign' %}">signup</a></p>
+    </nav>
+<br>
+<br>
+    <p class="bcd">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Sed deserunt repellendus ipsa soluta magnam quas reiciendis, 
+         recusandae praesentium ut? Sed totam molestias velit
+          sunt dignissimos animi iure quis ut atque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Sed deserunt repellendus ipsa soluta magnam quas reiciendis, 
+          recusandae praesentium ut? Sed totam molestias velit
+           sunt dignissimos animi iure quis ut atque</p>
+          
+    <p class="bcde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus necessitatibus, 
+        perferendis corrupti cum officia magni modi tempore at fugiat,
+        cupiditate temporibus id ratione dolorum quod veniam molestias minus obcaecati ex delectus? Voluptate, 
+        eum perferendis! Eos numquam, quia corrupti, animi illo,
+        hic similique molestias facere rerum recusandae amet tenetur debitis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sed deserunt repellendus ipsa soluta magnam quas reiciendis, 
+        recusandae praesentium ut? Sed totam molestias velit
+         sunt dignissimos animi iure quis ut atque</p>
+        
+    
+         {% include 'footer.html' %} 
+            
+</body>
+</html>
+
+
+{% comment %} if user login:/ user is none 
+        'invalid login' 
+	open home && aboutus && contact 
+    def login(request):
+        a=(request,arg(redirect aboutus,contact))
+        return a
+else:
+	error {% endcomment %}

@@ -1,0 +1,19 @@
+<!-- myapp/templates/product_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user List</title>
+</head>
+<body>
+    <h1>Available user</h1>
+    <ul>
+        {% for users in user %}
+            <li>{{ users.name }} ({{ users.category }})</li>
+        {% empty %}
+            <li>No user available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
